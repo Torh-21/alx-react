@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "start": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "start": "webpack-dev-server --mode development --config config/webpack.config.js",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",
