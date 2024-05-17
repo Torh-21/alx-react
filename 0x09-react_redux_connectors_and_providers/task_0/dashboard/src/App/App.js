@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from "react-redux";
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Login from '../Login/Login';
@@ -173,4 +174,12 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default App;
+// export default App;
+
+export const mapStateToProps = (state) => {
+	return {
+		isLoggedIn: state.get("isUserLoggedIn"),
+	};
+};
+
+export default connect(mapStateToProps)(App);
