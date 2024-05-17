@@ -123,11 +123,11 @@ export class Notifications extends Component {
 Notifications.defaultProps = {
   displayDrawer: false,
   listNotifications: null,
-  handleDisplayDrawer: () => {},
-  handleHideDrawer: () => {},
-  markNotificationAsRead: () => {},
-  fetchNotifications: () => {},
-  setNotificationFilter: () => {},
+  handleDisplayDrawer: () => { },
+  handleHideDrawer: () => { },
+  markNotificationAsRead: () => { },
+  fetchNotifications: () => { },
+  setNotificationFilter: () => { },
 };
 
 Notifications.propTypes = {
